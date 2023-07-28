@@ -48,7 +48,7 @@ const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
               </div>
             </div>
 
-            <p className="mt-8 text-sm">Promising the most exciting classes, superstar coaches and excellent equipment, Virgin Active's core focuses lie in Strength, Stability, Stamina and Soul.</p>
+            <p className="mt-8 text-sm">Promising the most exciting classes, superstar coaches and excellent equipment, Body Tech's core focuses lie in Strength, Stability, Stamina and Soul.</p>
           </motion.div>
 
           {/* ACTION-BUTTONS */}
@@ -66,7 +66,7 @@ const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
               Join Now
             </ActionButton>
             <AnchorLink
-            className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+            className="text-sm font-bold text-primary-600 underline hover:text-secondary-500"
             onClick={() => setSelectedPage(SelectedPage.ContactUs)}
             href={`#${SelectedPage.ContactUs}`}
             >
