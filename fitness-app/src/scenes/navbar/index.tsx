@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
-import Logo from "@/assets/logo8.jpg"
+import Logo from "@/assets/logo-without.png"
 import Link from "./Link"
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -22,7 +22,7 @@ const navbarBackground = isTopOfPage? "" : "bg-secondary-100 drop-shadow"
   return (
     <nav>
       {/* outer div: */}
-      <div className={`${navbarBackground} ${flexBetween} fixed top-3 z-30 w-full py-6`}>
+      <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
 
         {/* inner div: */}
         <div className={`${flexBetween} mx-auto w-5/6`}>
