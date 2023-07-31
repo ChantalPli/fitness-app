@@ -52,7 +52,8 @@ const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
           </motion.div>
 
           {/* ACTION-BUTTONS */}
-          <motion.div className="mt-8 flex items-center gap-8 my-10 sm:justify-center"
+          <motion.div 
+          className="mt-8 flex items-center gap-8 my-10 sm:justify-center"
            initial="hidden"
            whileInView="visible"
            viewport={{once:true, amount: 0.5}}
