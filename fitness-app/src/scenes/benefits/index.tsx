@@ -1,4 +1,4 @@
-import Htext from "@/shared/Htext"
+import HText from "@/shared/HText"
 import { BenefitType, SelectedPage } from "@/shared/types"
 import { HomeModernIcon,UserGroupIcon,AcademicCapIcon  } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion"
@@ -57,7 +57,7 @@ export default function Benefits({setSelectedPage}: Props) {
              visible:{opacity: 1, x: 0}
            }}
           >
-           <Htext>MORE THAN JUST A GYM</Htext>
+           <HText>MORE THAN JUST A GYM</HText>
            <p className="my-5 text-sm">The moment you walk into an Body Tech, things feel different. From the warm personal welcome you’ll get 
             from our colleagues to the awesome equipment you normally only get at pricey gyms, we offer a unique 
             blend of budget and boutique – so you really feel like you belong. </p>
@@ -107,10 +107,10 @@ export default function Benefits({setSelectedPage}: Props) {
                      visible:{opacity: 1, x: 0}
                    }}
                   >
-                    <Htext>
+                    <HText>
                       LIVE HAPPILY EVER{" "}
                       <span className="text-primary-600">ACTIVE</span>
-                    </Htext>
+                    </HText>
                   </motion.div>
                 </div>
               </div>
