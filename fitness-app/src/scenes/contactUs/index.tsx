@@ -16,7 +16,7 @@ const {
   formState: {errors}
 } = useForm()
 
-const inputStyle = `w-full rounded-lg bg-secondary-100 px-5 py-3 placeholder-white`
+const inputStyle = `w-full rounded-lg bg-secondary-100 px-5 py-3 mt-5 placeholder-white`
 
 const onSubmit = async (e: any) =>{
   const isValid = await trigger()
@@ -46,6 +46,7 @@ const onSubmit = async (e: any) =>{
           <HText>
              <span className='text-primary-600'>CONTACT US</span>  AND START YOUR FITNESS JOURNEY
           </HText>
+          </motion.div>
 
           {/* FORM AND IMAGE */}
           <div className="mt-10 justify-between gap-8 md:flex">
@@ -63,7 +64,7 @@ const onSubmit = async (e: any) =>{
               <form
                 target="_blank"
                 onSubmit={onSubmit}
-                action="https://formsubmit.co/chantal.trc@gmail.com"
+                action="https://formsubmit.co/5280bd31860ee299ca69e2ae057a69b8"
                 method="POST"
               >
                 <input 
@@ -98,10 +99,11 @@ const onSubmit = async (e: any) =>{
                   </p>
                 )}
 
-                <input 
+                <textarea
                 className={inputStyle}
-                type="text"
                 placeholder="MESSAGE"
+                rows={4}
+                cols={50}
                 {...register("message", {
                   required: true,
                   maxLength:2000
@@ -121,11 +123,11 @@ const onSubmit = async (e: any) =>{
                   SUBMIT
                 </button>
 
-
               </form>
             </motion.div>
+
           </div>
-        </motion.div>
+     
       </motion.div>
     </section>
   )
